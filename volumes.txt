@@ -1,0 +1,32 @@
+create instance ami with 8 gb root
+create volume and attach to instance
+and check voume lsblk
+sudo file -s /dev/xvdf
+sudo mke2fs -j /dev/xvdf
+sudo mkdir /newdisk
+ls -1
+cd ../..
+ls-al
+sudo mount /dev/xvdf /newdisk
+df -h
+cd newdisk
+ls -l
+touch f1.txt
+cat> f1.txt
+cat f1.txt
+pwd
+cd ..
+ls -l
+df -h
+and stop the instance
+and detach voume to instance
+and create new instance
+and attach 10gb volume to new instance
+df -h
+mkdir newdrive
+mount /dev/xvdf newdrive
+ls -al
+cd newdrive/
+ls -al
+
+
